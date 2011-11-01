@@ -1,0 +1,9 @@
+NSDataWithBlocks: NSData Category for iOS
+Currently, NSData:dataWithContentsOfURL: is a blocking request - meaning it 
+blocks the main thread until the contents are downloaded. The purpose of this 
+code is to wrap NSData:dataWithContentsOfURL: in a block to create a non-blocking call.
+
+Some of the other frameworks provide a this capability, but I didn't need the everything
+else the frameworks were providing.
+
+Feel free to use any way you want. Or better yet, add to it!
